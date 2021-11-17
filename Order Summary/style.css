@@ -1,0 +1,103 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(background-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section{
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.192);
+    border-radius: 13px;
+    margin: auto;
+}
+p{
+    color: rgb(112, 111, 111);
+    font-size: 15px;
+}
+h2{
+    text-align: center;
+    margin-bottom: 15px;
+}
+a{
+    text-decoration: none;
+}
+
+#txt{
+    text-align: center;
+    /* background-color: thistle; */
+    width: 90%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+strong{
+    color: black;
+}
+section img{
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    width: 100%;
+}
+article#music{
+    width: 80%;
+    display: table;
+    /* background-color: red; */
+    margin: auto;
+}
+#img-music{
+    display: table-cell;
+    float: left;
+    /* background-color: plum; */
+    margin-left: 15px;
+    width: 20%;
+}
+#img-music img{
+    width: 40px;
+    margin: 5px 0px 0 5px;
+}
+#valor{
+    display: table-cell;
+    float: left;
+    /* background-color: pink; */
+    width: 55%;
+    height: 50px;
+}
+#valor p{
+    margin: auto;
+}
+#change{
+    display: table-cell;
+    float: left;
+    /* background-color: black; */
+    margin-top: 12px;
+    font-size: 14px;
+}
+#change a{
+    text-decoration: underline;
+}
+#botao{
+    background-color: rgb(5, 5, 212);
+    width: 80%;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.452);
+}
+#botao p{
+    color: white;
+    padding: 10px 0px;
+}
+#cancel{
+    /* background-color: violet; */
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding-top: 0.5px;
+    padding-bottom: 20px;
+}
+#cancel strong{
+    padding-top: 10px;
+    color: rgb(112, 111, 111);
+}
