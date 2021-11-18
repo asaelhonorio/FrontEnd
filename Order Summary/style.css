@@ -38,36 +38,30 @@ section img{
     border-top-right-radius: 13px;
     width: 100%;
 }
-article#music{
-    width: 80%;
-    display: table;
+
+article.music{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 0.7fr 1.5fr 1fr;
     /* background-color: red; */
     margin: auto;
 }
 #img-music{
-    display: table-cell;
-    float: left;
     /* background-color: plum; */
     margin-left: 15px;
-    width: 20%;
 }
 #img-music img{
     width: 40px;
-    margin: 5px 0px 0 5px;
+    float: right;
 }
 #valor{
-    display: table-cell;
-    float: left;
-    /* background-color: pink; */
-    width: 55%;
-    height: 50px;
+    padding-left: 10%;
+
 }
 #valor p{
     margin: auto;
 }
 #change{
-    display: table-cell;
-    float: left;
     /* background-color: black; */
     margin-top: 12px;
     font-size: 14px;
@@ -75,10 +69,17 @@ article#music{
 #change a{
     text-decoration: underline;
 }
+
+.botao-cancel{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    /* background-color: blueviolet; */
+    text-align: center;
+}
 #botao{
     background-color: rgb(5, 5, 212);
     width: 80%;
-    text-align: center;
+    /* text-align: center; */
     color: white;
     border-radius: 10px;
     margin: auto;
@@ -89,13 +90,8 @@ article#music{
     color: white;
     padding: 10px 0px;
 }
-#cancel{
-    /* background-color: violet; */
-    text-align: center;
-    width: 50%;
-    margin: auto;
-    padding-top: 0.5px;
-    padding-bottom: 20px;
+#cancel p{
+    margin-top: 15px;
 }
 #cancel strong{
     padding-top: 10px;
