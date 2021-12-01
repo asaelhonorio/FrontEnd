@@ -3,6 +3,7 @@ txt.setAttribute('class', 'texto')
 txt.textContent = 'Aqui vai a hora...'
 txt.style.padding = '10px'
 txt.style.textAlign = 'center'
+txt.style.fontSize = '20px'
 
 var section = document.querySelector('#section')
 section.appendChild(txt)
