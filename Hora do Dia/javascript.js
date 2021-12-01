@@ -19,4 +19,25 @@ function carregar(){
     img.setAttribute('id', 'imagem')
     img.setAttribute('src', './imagem/fotodia.png')
     res.appendChild(img)
+
+
+    var data = new Date()
+    var hrs = data.getHours()
+    // var hrs = 18
+    
+    if(hrs < 12){
+        img.src = './imagem/fotodia.png'
+        document.body.style.backgroundColor = 'lightblue'
+        txt.textContent = `São ${hrs} horas! Bom Dia! `  
+    }
+    else if( hrs >= 12 && hrs < 18){
+        img.src = './imagem/fototarde.png'
+        document.body.style.backgroundColor = 'chocolate'
+        txt.textContent = `São ${hrs} horas! Boa Tarde! `
+    }
+    else{
+        img.src = './imagem/fotonoite.png'
+        document.body.style.backgroundColor = 'rgb(48, 47, 47)'
+        txt.textContent = `São ${hrs} horas! Boa Noite! `
+    }
 }
