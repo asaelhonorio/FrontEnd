@@ -9,30 +9,53 @@
 }
 body
 {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background-color: rgba(6, 29, 163, 0.397);
+    height: 100vh;
+    background-color: rgba(43, 43, 43, 0.795);
 }
-.container{
-    background-color: rgb(255, 255, 255);
-    width: 400px;
-    height: 250px;
-    border-radius: 20px;
-    padding: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.384);
-}
-h3{
-    padding-bottom: 10px;
-    color: black;
+#form { 
+    position: relative;
 }
 #form #email{
     width: 300px;
-    height: 30px;
+    padding: 5px;
     outline: none;
     border: none;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: rgba(6, 30, 163, 0.185);
+    background-color: #29292985;
+    color: white;
+    border-radius: 6px;
 }
+.inputbox{
+    position: relative;
+}
+#text{
+    display: block;
+    color: #000;
+    font-weight: 300;
+    padding: 5px;
+    font-style: italic;
+}
+#form.invalido .inputbox:before{
+    content: '';
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    background: url(imagens/invalid.png);
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+}
+#form.valido .inputbox:before{
+    content: '';
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    background: url(imagens/valid.png);
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+}
+
