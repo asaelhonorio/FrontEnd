@@ -1,0 +1,46 @@
+@charset "UTF-8";
+*{
+    box-sizing: border-box;
+}
+div{
+    width: 100%;
+    margin: 0;
+    width: 100%;
+    display: table;
+}
+#divisao1{
+    background-color: black;
+    width: 450px;
+    height: 200px;
+    float: left;
+}
+#divisao2{
+    background-color: red;
+    width: 450px;
+    height: 200px;
+    float: left;
+}
+#divisao3{
+    background-color: blue;
+    width: 450px;
+    height: 200px;
+    float: left;  
+}
+#divisao4{
+    background-color: rgb(38, 255, 0);
+    width: 100%;
+    height: 200px;
+    float: left;
+}
+p{
+    margin: 0 5px;
+    /* padding: 5px; */
+    font-size: 20px;
+    color: white;
+}
+/* #divisao5{
+    background-color: rgb(255, 0, 212);
+    width: 350px;
+    height: 450px;
+    float: left;
+} */

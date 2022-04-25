@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .tb1{
+            background-color: pink;
+            width: 400px;
+            height: 100px;
+            border-collapse: collapse;
+            text-align: center;
+
+        }
+        .tb1 td{
+            padding: 8px;
+            border: 1px solid black;
+            /* vertical-align: bottom; */
+        }
+
+    /* ========= */
+        .tb2{
+                background-color: rgba(7, 133, 165, 0.267);
+                width: 400px;
+                height: 100px;
+                border-collapse: collapse;
+                text-align: center;
+        }
+        .tb2 td, th{
+            border: 1px solid black;
+        }
+    /* ========== */
+    
+
+    </style>
+</head>
+<body>
+    <h1>Praticando tabelas</h1>
+    <!-- Para criar tabelas é necessário utilizar a tag ==== TABLE ==== -->
+    <!-- ==== TR ===== para criar linhas -->
+    <!-- ==== TD ==== conteúdo em uma célula -->
+    <!-- ==== TH ==== células que seram destaque/título -->
+    <table class="tb1">
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td>E</td>
+            <td>F</td>
+            <td>G</td>
+            <td>H</td>
+        </tr>
+    </table>
+    <!-- ===== TABELA COM 'TH' ====== -->
+    <p>============================================</p>
+    <table class="tb2">
+        <tr>
+            <th>NOME</th>
+            <th>IDADE</th>
+            <th>CIDADE</th>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>17</td>
+            <td>Sobral</td>
+        </tr>
+        <tr>
+            <td>Lucas</td>
+            <td>19</td>
+            <td>Nova Russas</td>
+        </tr>
+    </table>
+</body>
+</html>
