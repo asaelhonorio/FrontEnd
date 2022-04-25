@@ -1,0 +1,115 @@
+.grid{
+    display: grid;
+    border: 2px solid gray;
+}
+.grid-template-1{
+    grid-template-areas:
+    'logo nav nav' 50px
+    'sidenav content advert' 150px
+    'sidenav footer footer' 100px
+    / 100px 1fr 50px;
+}
+.item{
+    border: 2px solid green;
+}
+
+/* Grid */
+.grid {
+	display: grid;
+    
+}
+
+/* .grid-template-1 {
+	grid-template: 50px 1fr / 100px 1fr 100px;
+} */
+
+.grid-template-2 {
+    /* grid-template-columns:100px 1fr 50px 50px;
+    grid-template-rows: 50px 150px 100px;
+    grid-template-areas:
+    'logo nav nav'
+    'sidenav content advert'
+    'sidenav footer footer'; */
+
+/* PARA ESTA FORMA FUNCIONAR, TEM Q TIRAR O 'AREA' */
+	/* grid-template:
+		'logo nav nav'50px 
+		'sidenav content advert'150px 
+		'sidenav footer footer'100px
+        /100px 1fr 50px; */
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 100px);
+
+    grid-template-areas:
+    'logo nav content'
+    'sidenav sidenav sidenav'
+    'advert advert advert'
+    'footer . .';
+
+    
+}
+
+.logo {
+	grid-area: logo;
+    /* grid-column: 4; */
+    grid-row: 4;
+    grid-column: 2;
+}
+
+.nav {
+	grid-area: nav;
+}
+
+.content {
+	grid-area: content;
+}
+
+.sidenav {
+	grid-area: sidenav;
+    
+}
+
+.advert {
+	grid-area: advert;
+}
+
+.footer {
+	grid-area: footer;
+}
+
+/* Grid Item */
+.item {
+	margin: 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.grid {
+	max-width: 600px;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+}
+
+
+/* body {
+	font-family: monospace;
+	color: #333;
+	padding-bottom: 60px;
+	margin: 0px;
+} */
+
+/* body > div {
+	padding: 40px 0;
+} */
+
+/* body > div:nth-of-type(even) {
+	background: rgba(0,0,0,.03);
+} */
+
+/* body > div > img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+} */

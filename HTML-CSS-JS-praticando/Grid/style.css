@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.box{
+    background-color: blueviolet;
+    border: 2px solid black;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    /* grid-template-columns: 1fr 1fr 1fr;  */
+    /*"fr" ou "%" são mais usados por serem responsivos*/
+    /* repeat( , ) é usado para simplificar quantidade de colunas e dimensão*/
+    grid-template-columns: repeat(3, 1fr);
+
+    /*<<<< CRIAR LINHAS. Funcina na mesma lógica*/
+    /* grid-template-rows: 1fr 3fr 1fr; */ 
+    /* grid-template-rows: repeat(3, 1fr); */
+
+    
+    grid-auto-rows: 200px;/*<<<<< define tamanho automático em linhas para todas as divs */
+
+    /* <<<< FUNCIONA COMO O "PADDING". ESPAÇAMENTO TANTO PARA COLUNAS QUANTO PARA LINHAS */
+    /* grid-gap: 10px; */
+}
+.box-1{
+    /* "grid-column" define onde queremos que comece determinado container. "1/3" está dznd q começa na linha 1 e termina 
+    na linha 3*/
+    grid-column: 1/3;
+    /* grid-column: 2/4; */
+
+    /* "grid-row" segue a mesma lógica. */
+}
+.box-4{
+    /* grid-column: 2/4; */
+    grid-row: 2/4;
+}
+.box-6{
+    /* grid-column: 1/4; */
+}
