@@ -45,3 +45,104 @@ h1{
 #btnsoma:hover{
     background-color: yellow;
 }
+
+
+/* UNDERLINE */
+
+.underline{
+    /* background-color: rgba(255, 0, 0, 0.199); */
+    display: flex;
+    width: 50%;
+    margin: 20px auto 20px auto;
+}
+.underline p {
+    padding: 5px;
+    margin: auto;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    color: white;
+}
+
+.underline p:nth-child(1)::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+}
+.underline p:nth-child(1):hover::after{
+    width: 100%;
+    transition: .5s ease;
+}
+
+.underline p:nth-child(2):hover{
+    transform: rotateY(360deg);
+    /* transform: skew(20deg , 30deg); */
+    transition: 1s ease;
+}
+
+.underline p:nth-child(3)::after{
+    content: '';
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: -1px;
+    background-color: white;
+    position: absolute;
+    z-index: -1;
+    transform: skewX(-10deg);
+}
+.underline p:nth-child(3):hover::after{
+    width: 100%;
+    transition: .5s ease;
+    
+}
+.underline p:nth-child(3):hover{
+    color: black;
+}
+
+.underline p:nth-child(4):hover{
+    transform: scale(2);
+    transition: .5s ease;
+}
+
+
+/* TEXTO OCULTO */
+.conteudo{
+    /* background-color: rgba(255, 235, 205, 0.178); */
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+.art{
+    /* width: 200px; */
+    /* background-color: pink; */
+}
+.art .item{
+    cursor: pointer;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.art .content{
+    background-color: rgb(130, 100, 160);
+    height: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.art .content p{
+    padding: 3px;
+}
+
+.art .content.active{
+    height: 200px;
+    transition: .2s;
+}

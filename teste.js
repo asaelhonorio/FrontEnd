@@ -9,12 +9,19 @@ function somar(){
     var n2 = Number(num2.value)
     var s = n1+n2
 
-        if(n1 || n2 < 0 || ''){
-            res.innerHTML = 'Adicione um número válido'
+        if(s < 0){
+            window.alert('Digite números válidos!')
         }
         else{
             res.innerHTML = `A soma dos números ${n1} + ${n2} é igual a = ${s}`
         }
 }
 divNum.appendChild(res)
-console.log(divNum)
+
+//TEXTO OCULTO
+var item = document.querySelector('.item')
+
+function show(id){
+    let content = document.querySelector(id)
+    content.classList.toggle('active')
+}
