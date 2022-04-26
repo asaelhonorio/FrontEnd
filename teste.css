@@ -34,6 +34,14 @@ h1{
 }
 .numeros{
     /* background-color: beige; */
-    width: 450px;
+    width: 500px;
     margin: auto;
+}
+#res{
+    text-align: center;
+    padding: 10px;
+    color: yellow;
+}
+#btnsoma:hover{
+    background-color: yellow;
 }
