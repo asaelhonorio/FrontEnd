@@ -1,0 +1,33 @@
+*{
+    font-family: sans-serif;
+}
+main{
+    /* background-color: rgba(0, 255, 255, 0.397); */
+    width: 500px;
+    margin: auto;
+}
+h1{
+    color: rgb(12, 2, 110);
+    font-size: 3em;
+    text-align: center;
+}
+p{
+    color: green;
+    font-weight: bold;
+    font-size: 5em;
+    text-align: center;
+}
+.btns{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.btns button{
+    margin: 5px;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid
+}
+
