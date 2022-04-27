@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+.temp{
+    width: 500px;
+    height: 200px;
+    font-family: sans-serif;
+    font-size: 4em;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: 1px solid white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.data{
+    color: white;
+    font-size: 2em;
+    font-family: sans-serif;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.am_pm{
+    position: absolute;
+    top: 52%;
+    right: 18%;
+    transform: translate(-50%, -50%);
+}
